@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1a1a2e;
+  --background-rgb: 26, 26, 46;
+  --foreground: #e6e6e6;
+  --foreground-rgb: 230, 230, 230;
+  --primary: #0f3460;
+  --primary-rgb: 15, 52, 96;
+  --secondary: #e94560;
+  --secondary-rgb: 233, 69, 96;
+  --primary-glow: 0 0 10px 1px rgba(15, 52, 96, 0.2);
+  --secondary-glow: 0 0 10px 1px rgba(233, 69, 96, 0.2);
+  --border-glow: 1px solid rgba(15, 52, 96, 0.15);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --background-rgb: 10, 10, 10;
+    --foreground: #ededed;
+    --foreground-rgb: 237, 237, 237;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.neon-text-primary {
+  color: var(--primary);
+  text-shadow: 0 0 2px var(--primary);
+}
+
+.neon-text-secondary {
+  color: var(--secondary);
+  text-shadow: 0 0 2px var(--secondary);
+}
+
+.neon-border-primary {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 4px var(--primary);
+}
+
+.neon-border-secondary {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 4px var(--secondary);
+}
+
+.glass-effect {
+  background: rgba(15, 52, 96, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(15, 52, 96, 0.1);
+}
+
+@keyframes neon-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.neon-pulse {
+  animation: neon-pulse 2.5s infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(109, 40, 217, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(109, 40, 217, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
