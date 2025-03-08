@@ -1,52 +1,71 @@
 {
-  "nav.home": "Inicio",
-  "nav.skills": "Habilidades",
-  "nav.experience": "Experiencia",
-  "nav.projects": "Proyectos",
-  "nav.contact": "Contacto",
-  
-  "hero.greeting": "Hola, soy",
-  "hero.role": "Desarrollador Full Stack",
-  "hero.description": "Construyo experiencias digitales excepcionales.",
-  "hero.cta.talk": "Hablemos",
-  "hero.cta.work": "Ver Trabajo",
-  "hero.stats.experience": "Años de Experiencia",
-  "hero.stats.projects": "Proyectos Realizados",
-  "hero.stats.clients": "Clientes Satisfechos",
-  "hero.stats.technologies": "Tecnologías",
-  
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "welcome": "Bienvenido a mi portafolio",
+    "title": "Hola, soy",
+    "subtitle": "Creando experiencias digitales que marcan la diferencia",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Realizados",
+      "clients": "Clientes Satisfechos",
+      "technologies": "Tecnologías"
+    },
+    "cta": {
+      "talk": "Hablemos",
+      "work": "Ver Trabajo"
+    }
+  },
   "skills.title": "Mi Experiencia",
   "skills.subtitle": "Tecnologías y Herramientas que Utilizo",
   "skills.proficiency": "Habilidades y Competencias",
   "skills.tools": "Herramientas y Tecnologías",
-  
   "experience.title": "Experiencia Laboral",
   "experience.education": "Educación",
   "experience.skills": "Habilidades Técnicas",
   "experience.learning": "Aprendizaje Continuo",
-  
-  "projects.title": "Proyectos Destacados",
+  "projects": {
+    "title": "Proyectos Destacados",
+    "viewMore": "Ver Más Proyectos"
+  },
   "projects.subtitle": "Algunos de mis trabajos recientes",
   "projects.viewDemo": "Ver Demo",
   "projects.viewCode": "Ver Código",
-  "projects.viewMore": "Ver Más en GitHub",
-  
-  "contact.title": "Contacto",
-  "contact.subtitle": "Hablemos sobre tu proyecto y hagamos realidad tus ideas",
-  "contact.name": "Tu Nombre",
-  "contact.email": "Tu Email",
-  "contact.subject": "Asunto",
-  "contact.message": "Tu Mensaje",
-  "contact.send": "Enviar Mensaje",
-  "contact.success": "¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.",
-  "contact.error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo o contáctame directamente por email.",
-  "contact.required": "Este campo es requerido",
-  "contact.invalidEmail": "Dirección de email inválida",
-  
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Hablemos sobre tu proyecto y hagamos realidad tus ideas",
+    "name": "Tu Nombre",
+    "email": "Tu Email",
+    "subject": "Asunto",
+    "message": "Tu Mensaje",
+    "send": "Enviar Mensaje",
+    "success": "¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.",
+    "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo o contáctame directamente por email.",
+    "required": "Este campo es requerido",
+    "invalidEmail": "Dirección de email inválida",
+    "methods": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación"
+    },
+    "projectTypes": {
+      "title": "Tipos de Proyectos",
+      "webdevelopment": "Desarrollo Web",
+      "mobileapp": "Aplicación Móvil",
+      "uiuxdesign": "Diseño UI/UX",
+      "hackintoshsetup": "Configuración Hackintosh",
+      "customwindowsimage": "Imagen Windows Personalizada",
+      "other": "Otro"
+    }
+  },
   "contact.methods.email": "Email",
   "contact.methods.phone": "Teléfono",
   "contact.methods.location": "Ubicación",
-  
   "contact.projectTypes.title": "Tipos de Proyectos",
   "contact.projectTypes.web": "Desarrollo Web",
   "contact.projectTypes.mobile": "Aplicación Móvil",

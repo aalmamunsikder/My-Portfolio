@@ -1,27 +1,29 @@
 "use client";
 
+import { useTheme } from '@/context/ThemeContext';
 import { motion } from 'framer-motion';
-import { useTheme } from '../context/ThemeContext';
 
 export default function ThemeToggle() {
-  const { isDark, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <motion.button
+      onClick={toggleTheme}
+      className="fixed top-4 right-20 z-50 p-2 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      onClick={toggleTheme}
-      className="fixed right-5 top-5 z-50 rounded-full bg-primary/10 p-2 text-primary backdrop-blur-sm transition-colors hover:bg-primary hover:text-white dark:bg-white/10 dark:text-white"
-      aria-label="Toggle theme"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2 }}
     >
-      {isDark ? (
+      {theme === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-6 w-6"
+          className="w-6 h-6 text-primary"
         >
           <path
             strokeLinecap="round"
@@ -36,7 +38,7 @@ export default function ThemeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-6 w-6"
+          className="w-6 h-6 text-primary"
         >
           <path
             strokeLinecap="round"

@@ -1,18 +1,26 @@
 {
-  "nav.home": "Home",
-  "nav.skills": "Skills",
-  "nav.experience": "Experience",
-  "nav.projects": "Projects",
-  "nav.contact": "Contact",
-  "hero.greeting": "Hi, I'm",
-  "hero.role": "Full Stack Developer",
-  "hero.description": "I build exceptional digital experiences.",
-  "hero.cta.talk": "Let's Talk",
-  "hero.cta.work": "View Work",
-  "hero.stats.experience": "Years Experience",
-  "hero.stats.projects": "Projects Done",
-  "hero.stats.clients": "Happy Clients",
-  "hero.stats.technologies": "Technologies",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to my portfolio",
+    "title": "Hi, I'm",
+    "subtitle": "Crafting digital experiences that make a difference",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Done",
+      "clients": "Happy Clients",
+      "technologies": "Technologies"
+    },
+    "cta": {
+      "talk": "Let's Talk",
+      "work": "View Work"
+    }
+  },
   "skills.title": "My Expertise",
   "skills.subtitle": "Technologies & Tools I Work With",
   "skills.proficiency": "Skills & Proficiency",
@@ -21,22 +29,41 @@
   "experience.education": "Education",
   "experience.skills": "Technical Skills",
   "experience.learning": "Continuous Learning",
-  "projects.title": "Featured Projects",
+  "projects": {
+    "title": "Featured Projects",
+    "viewMore": "View More Projects"
+  },
   "projects.subtitle": "Some of my recent work",
   "projects.viewDemo": "View Demo",
   "projects.viewCode": "View Code",
   "projects.viewMore": "View More on GitHub",
-  "contact.title": "Get in Touch",
-  "contact.subtitle": "Let's discuss your project and bring your ideas to life",
-  "contact.name": "Your Name",
-  "contact.email": "Your Email",
-  "contact.subject": "Subject",
-  "contact.message": "Your Message",
-  "contact.send": "Send Message",
-  "contact.success": "Message sent successfully! I'll get back to you soon.",
-  "contact.error": "Failed to send message. Please try again or contact directly via email.",
-  "contact.required": "This field is required",
-  "contact.invalidEmail": "Invalid email address",
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's discuss your project and bring your ideas to life",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send Message",
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "error": "Failed to send message. Please try again or contact directly via email.",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "methods": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "projectTypes": {
+      "title": "Project Types",
+      "webdevelopment": "Web Development",
+      "mobileapp": "Mobile App",
+      "uiuxdesign": "UI/UX Design",
+      "hackintoshsetup": "Hackintosh Setup",
+      "customwindowsimage": "Custom Windows Image",
+      "other": "Other"
+    }
+  },
   "contact.methods.email": "Email",
   "contact.methods.phone": "Phone",
   "contact.methods.location": "Location",
