@@ -3,17 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --background: #1a1a2e;
-  --background-rgb: 26, 26, 46;
-  --foreground: #e6e6e6;
-  --foreground-rgb: 230, 230, 230;
-  --primary: #0f3460;
-  --primary-rgb: 15, 52, 96;
-  --secondary: #e94560;
-  --secondary-rgb: 233, 69, 96;
-  --primary-glow: 0 0 10px 1px rgba(15, 52, 96, 0.2);
-  --secondary-glow: 0 0 10px 1px rgba(233, 69, 96, 0.2);
-  --border-glow: 1px solid rgba(15, 52, 96, 0.15);
+  --background: #ffffff;
+  --background-rgb: 255, 255, 255;
+  --foreground: #1a1a2e;
+  --foreground-rgb: 26, 26, 46;
+  --primary: #2563eb;
+  --primary-rgb: 37, 99, 235;
+  --secondary: #7c3aed;
+  --secondary-rgb: 124, 58, 237;
+  --primary-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+  --secondary-glow: 0 0 20px rgba(124, 58, 237, 0.15);
+  --border-glow: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.dark {
+  --background: #0f172a;
+  --background-rgb: 15, 23, 42;
+  --foreground: #f8fafc;
+  --foreground-rgb: 248, 250, 252;
+  --primary: #3b82f6;
+  --primary-rgb: 59, 130, 246;
+  --secondary: #8b5cf6;
+  --secondary-rgb: 139, 92, 246;
+  --primary-glow: 0 0 20px rgba(59, 130, 246, 0.2);
+  --secondary-glow: 0 0 20px rgba(139, 92, 246, 0.2);
+  --border-glow: 1px solid rgba(59, 130, 246, 0.15);
 }
 
 @theme inline {
@@ -36,33 +50,37 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground font-sans overflow-x-hidden;
+    @apply bg-background text-foreground antialiased;
   }
 }
 
 @layer components {
+  .glass-card {
+    @apply bg-white/5 dark:bg-black/5 backdrop-blur-lg border border-white/10 dark:border-black/10 shadow-lg;
+  }
+
   .neon-text-primary {
     @apply text-primary;
-    text-shadow: 0 0 2px var(--primary);
+    text-shadow: 0 0 10px var(--primary-glow);
   }
 
   .neon-text-secondary {
     @apply text-secondary;
-    text-shadow: 0 0 2px var(--secondary);
+    text-shadow: 0 0 10px var(--secondary-glow);
   }
 
   .neon-border-primary {
-    @apply border border-primary;
-    box-shadow: 0 0 4px var(--primary);
+    @apply border border-primary shadow-neon-primary;
   }
 
   .neon-border-secondary {
-    @apply border border-secondary;
-    box-shadow: 0 0 4px var(--secondary);
+    @apply border border-secondary shadow-neon-secondary;
   }
 
   .glass-effect {
-    @apply bg-opacity-10 bg-primary backdrop-blur-md rounded-lg border border-opacity-10 border-primary;
+    background-color: rgba(var(--primary-rgb), 0.1);
+    border-color: rgba(var(--primary-rgb), 0.1);
+    @apply backdrop-blur-md rounded-lg border;
   }
 
   .neon-pulse {

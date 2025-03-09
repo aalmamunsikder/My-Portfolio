@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -13,8 +14,14 @@ module.exports = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
+        primary: {
+          DEFAULT: 'var(--primary)',
+          rgb: 'var(--primary-rgb)',
+        },
+        secondary: {
+          DEFAULT: 'var(--secondary)',
+          rgb: 'var(--secondary-rgb)',
+        },
       },
       boxShadow: {
         'neon-primary': 'var(--primary-glow)',
