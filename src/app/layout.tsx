@@ -6,6 +6,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import I18nProvider from '@/components/I18nProvider';
+import LiveChat from '@/components/LiveChat';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
             <ThemeToggle />
             <LanguageSwitcher />
             {children}
+            <LiveChat />
           </I18nProvider>
         </ThemeProvider>
       </body>
